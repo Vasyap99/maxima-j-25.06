@@ -1,18 +1,8 @@
 package dz25_06;
 
-public class Pult1 implements Pult{
-    private TVset ts=null;
-    public void setTVset(TVset ts){
-        this.ts=ts;
-    }
+public class Pult1 extends AbstractPult{
     //* Метод для переключения по цифрам (Т.е. ввел цифру 5 - включился 5 канал, цифру 8 - включился 8 и т.д.)
     public void switchChannelTo(int i){
-        ts.switchChannel(this,i);
+        getTs().switchChannel(this,i);
     }
-    //* Метод для последовательного переключения вперед (Т.е. вы сейчас на 2 канале, после вызова этого метода, переключились на 3 и т.д.)
-    public void switchChannelForward(){}
-    //* Метод для последовательного переключения назад (Т.е. вы сейчас на 3 канале, после вызова этого метода, пеерключились на 2 и т.д.)
-    public void switchChannelBack(){}
-    //* Доп. метод (доп задача) чтобы можно было переключаться между последними каналами (Т.е. если вы были на 5 канале, а до этого были на 8, то при вызове этого метода, он должен переключить нас на 8 канал, если вызвать его еще раз, то на 5 канал)
-    public void switchToPreviousChannel(){}
 }

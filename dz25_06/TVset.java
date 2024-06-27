@@ -23,6 +23,10 @@ public class TVset{
         return currChannel;
     }
 
+    public int getChNum(){
+        return channels.length;
+    }
+
     public void registerPult(Pult pult){
         pults.add(pult);
         pult.setTVset(this);
