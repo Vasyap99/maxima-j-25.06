@@ -1,11 +1,13 @@
 package dz25_06;
 
+
 public abstract class AbstractPult implements Pult{
     private TVset ts=null;
     public TVset getTs(){return ts;}
     public void setTVset(TVset ts){
         this.ts=ts;
     }
+
     //* Метод для переключения по цифрам (Т.е. ввел цифру 5 - включился 5 канал, цифру 8 - включился 8 и т.д.)
     public abstract void switchChannelTo(int i);
 
