@@ -12,12 +12,12 @@ public abstract class AbstractPult implements Pult{
     //* Метод для последовательного переключения вперед (Т.е. вы сейчас на 2 канале, после вызова этого метода, переключились на 3 и т.д.)
     public void switchChannelForward(){
         if(ts!=null)
-        if(ts.getCurrChannel()<ts.getChNum()-1) switchChannelTo(ts.getCurrChannel()+1);
+        if(ts.getCurrChannel()<ts.getChNum()) switchChannelTo(ts.getCurrChannel()+1);
     }
     //* Метод для последовательного переключения назад (Т.е. вы сейчас на 3 канале, после вызова этого метода, пеерключились на 2 и т.д.)
     public void switchChannelBack(){
         if(ts!=null)
-        if(ts.getCurrChannel()>0) switchChannelTo(ts.getCurrChannel()-1);
+        if(ts.getCurrChannel()>1) switchChannelTo(ts.getCurrChannel()-1);
     }
     //* Доп. метод (доп задача) чтобы можно было переключаться между последними каналами (Т.е. если вы были на 5 канале, а до этого были на 8, то при вызове этого метода, он должен переключить нас на 8 канал, если вызвать его еще раз, то на 5 канал)
     public void switchToPreviousChannel(){switchChannelBack();}

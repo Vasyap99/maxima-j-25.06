@@ -8,7 +8,7 @@ import java.util.Arrays;
 
 public class TVset{
     private HashSet<Pult> pults=new HashSet<>();
-    private int currChannel=0;
+    private int currChannel=1;
 
     private Channel1[] channels;
 
@@ -17,7 +17,7 @@ public class TVset{
     }
 
     private void setCurrChannel(int i){
-        if(i>=0 && i<channels.length) currChannel=i;
+        if(i>=1 && i<=channels.length) currChannel=i;
     }
     public int getCurrChannel(){
         return currChannel;
@@ -35,8 +35,8 @@ public class TVset{
     public void switchChannel(Pult pult,int i){
         if(pults.contains(pult)){
             setCurrChannel(i);
-            System.out.println(channels[i].toString()); 
-            System.out.println(channels[i].getCurrProgram().toString()); 
+            System.out.println(channels[currChannel-1].toString()); 
+            System.out.println(channels[currChannel-1].getCurrProgram().toString()); 
         }else{
             System.out.println("Error! Pult not registred!");
         }
