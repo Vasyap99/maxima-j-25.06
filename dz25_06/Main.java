@@ -1,6 +1,7 @@
 package dz25_06;
 
 import java.util.Scanner;
+import java.util.Random;
 
 public class Main{
     public static void main(String[]s1){
@@ -10,6 +11,11 @@ public class Main{
                           );
         Pult1 pult=new Pult1();
         ts.registerPult(pult);
+
+        Random random = new Random();
+        int randomNumber = random.nextInt(ts.getChNum()) + 1;
+
+        pult.switchChannelTo(randomNumber);
 
         Scanner s=new Scanner(System.in);
 
