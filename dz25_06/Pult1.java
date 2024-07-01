@@ -18,6 +18,7 @@ public class Pult1 extends AbstractPult implements Pult{
         if(l.getLast()!=i) l.add(i);
     }
 
+    @Override
     public void switchChannelTo(int i){
         getTs().switchChannel(this,i);
         memChannel(getTs().getCurrChannel());
@@ -25,6 +26,7 @@ public class Pult1 extends AbstractPult implements Pult{
     }
 
     //* ƒоп. метод (доп задача) чтобы можно было переключатьс€ между последними каналами (“.е. если вы были на 5 канале, а до этого были на 8, то при вызове этого метода, он должен переключить нас на 8 канал, если вызвать его еще раз, то на 5 канал)
+    @Override
     public void switchToPreviousChannel(){
         int sz=l.size();
         if(b) sz=--x; else x=sz;
