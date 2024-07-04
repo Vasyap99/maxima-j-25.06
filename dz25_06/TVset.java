@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Arrays;
 
 
-public class TVset{
+public class TVset implements ITVset{
     private HashSet<Pult> pults=new HashSet<>();
     private int currChannel=1;
 

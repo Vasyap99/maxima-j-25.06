@@ -2,9 +2,9 @@ package dz25_06;
 
 
 public abstract class AbstractPult implements Pult{
-    private TVset ts=null;
-    public TVset getTs(){return ts;}
-    public void setTVset(TVset ts){
+    private ITVset ts=null;
+    public ITVset getTs(){return ts;}
+    public void setTVset(ITVset ts){
         this.ts=ts;
     }
 
