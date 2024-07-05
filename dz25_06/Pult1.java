@@ -4,7 +4,6 @@ import java.util.LinkedList;
 
 
 public class Pult1 extends AbstractPult implements Pult{
-    //* Метод для переключения по цифрам (Т.е. ввел цифру 5 - включился 5 канал, цифру 8 - включился 8 и т.д.)
 
     private LinkedList<Integer> l=new LinkedList<>();
     private boolean b=false;
@@ -25,7 +24,6 @@ public class Pult1 extends AbstractPult implements Pult{
         b=false;
     }
 
-    //* Доп. метод (доп задача) чтобы можно было переключаться между последними каналами (Т.е. если вы были на 5 канале, а до этого были на 8, то при вызове этого метода, он должен переключить нас на 8 канал, если вызвать его еще раз, то на 5 канал)
     @Override
     public void switchToPreviousChannel(){
         int sz=l.size();

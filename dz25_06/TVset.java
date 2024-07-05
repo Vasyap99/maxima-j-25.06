@@ -19,19 +19,24 @@ public class TVset implements ITVset{
     private void setCurrChannel(int i){
         if(i>=1 && i<=channels.length) currChannel=i;
     }
+
+    @Override
     public int getCurrChannel(){
         return currChannel;
     }
 
+    @Override
     public int getChNum(){
         return channels.length;
     }
 
+    @Override
     public void registerPult(Pult pult){
         pults.add(pult);
         pult.setTVset(this);
     }
 
+    @Override
     public void switchChannel(Pult pult,int i){
         if(pults.contains(pult)){
             setCurrChannel(i);

@@ -9,7 +9,7 @@ public class Main{
                            new Channel1("1 kanal",new Program("Novosti"),new Program("KVN"),new Program("Show Malahova")),
                            new Channel1("Russia24",new Program("Vesti"))
                           );
-        Pult1 pult=new Pult1();
+        Pult pult=new ChildPult();
         ts.registerPult(pult);
 
         Random random = new Random();
