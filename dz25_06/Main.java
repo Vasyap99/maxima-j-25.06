@@ -63,7 +63,9 @@ public class Main{
 
         Pult pult=tf.getPult(ptype); 
 
+        System.out.println("***********************************************************");
         System.out.println("Enter:\n   -1 back\n   0 forward\n or chanel number <Enter>");
+        System.out.println("***********************************************************");
 
         while(s.hasNext()){
             if(s.hasNextInt()){
