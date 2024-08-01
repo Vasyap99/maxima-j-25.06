@@ -1,3 +1,11 @@
 *.bat
 *.sh
 dz25_06/*.class
+
+target
+target/*
+target/*/*
+target/*/*/*
+target/*/*/*/*
+target/*/*/*/*/*
+.gitignore
