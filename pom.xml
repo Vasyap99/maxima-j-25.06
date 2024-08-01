@@ -23,4 +23,26 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
    </dependencies>
 
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+
+        <!-- Here come other details        ...        -->
+        <configuration>
+          <archive>
+            <manifest>
+              <addClasspath>true</addClasspath>
+              <mainClass>dz25_06.Main</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+        <!-- Here come other details      ...        -->
+
+      </plugin>
+    </plugins>
+  </build>
+
 </project>
