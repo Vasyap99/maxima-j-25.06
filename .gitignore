@@ -1,6 +1,5 @@
-*.bat
-*.sh
 dz25_06/*.class
+dz25_06
 
 target
 target/*
