@@ -3,7 +3,7 @@ package dz25_06;
 public class ChildPult implements Pult{
     private ITVset ts=null;
 
-    public void setTVset(ITVset ts){
+    public void setTs(ITVset ts){
         this.ts=ts;
     }
     

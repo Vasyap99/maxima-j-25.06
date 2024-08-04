@@ -31,7 +31,7 @@ public class TVset implements ITVset{
     @Override
     public void registerPult(Pult pult){
         pults.add(pult);
-        pult.setTVset(this);
+        pult.setTs(this);
     }
 
     @Override

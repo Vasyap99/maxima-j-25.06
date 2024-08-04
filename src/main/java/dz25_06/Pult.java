@@ -1,7 +1,7 @@
 package dz25_06;
 
 public interface Pult{
-    void setTVset(ITVset ts);
+    void setTs(ITVset ts);
 
     void switchChannelTo(int i);
 

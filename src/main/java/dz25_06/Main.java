@@ -12,7 +12,7 @@ class tvFactory{
         this.ts=ts;
     }
 
-    public ITVset getTVset(){
+    public ITVset getTs(){
         return ts;
     }
 

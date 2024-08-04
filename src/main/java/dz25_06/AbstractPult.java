@@ -4,7 +4,7 @@ package dz25_06;
 public abstract class AbstractPult implements Pult{
     private ITVset ts=null;
     public ITVset getTs(){return ts;}
-    public void setTVset(ITVset ts){
+    public void setTs(ITVset ts){
         this.ts=ts;
     }
 
