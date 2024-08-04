@@ -3,16 +3,17 @@ package dz25_06;
 import java.util.Scanner;
 import java.util.Random;
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import lombok.NonNull;
 
 
+@RequiredArgsConstructor
 class tvFactory{
     @Getter
+    @NonNull
     private ITVset ts;
-    private boolean first_call=true;
 
-    public tvFactory(ITVset ts){
-        this.ts=ts;
-    }
+    private boolean first_call=true;
 
     public Pult getPult(int type){
        
