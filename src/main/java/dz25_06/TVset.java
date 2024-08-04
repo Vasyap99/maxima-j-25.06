@@ -1,13 +1,16 @@
 package dz25_06;
 
 import java.util.HashSet;
-//import java.util.ArrayList;
 import java.util.List;
 import java.util.Arrays;
+
+import lombok.Getter;
 
 
 public class TVset implements ITVset{
     private HashSet<Pult> pults=new HashSet<>();
+
+    @Getter
     private int currChannel=1;
 
     private Channel1[] channels;
@@ -18,11 +21,6 @@ public class TVset implements ITVset{
 
     private void setCurrChannel(int i){
         if(i>=1 && i<=channels.length) currChannel=i;
-    }
-
-    @Override
-    public int getCurrChannel(){
-        return currChannel;
     }
 
     @Override
