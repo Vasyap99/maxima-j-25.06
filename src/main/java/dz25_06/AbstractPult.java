@@ -1,13 +1,12 @@
 package dz25_06;
 
+import lombok.Setter;
+import lombok.Getter;
 
 public abstract class AbstractPult implements Pult{
+    @Setter
+    @Getter
     private ITVset ts=null;
-    public ITVset getTs(){return ts;}
-    public void setTs(ITVset ts){
-        this.ts=ts;
-    }
-
 
     @Override
     public abstract void switchChannelTo(int i);

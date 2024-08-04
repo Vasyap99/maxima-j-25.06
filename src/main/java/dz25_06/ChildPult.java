@@ -1,11 +1,10 @@
 package dz25_06;
 
-public class ChildPult implements Pult{
-    private ITVset ts=null;
+import lombok.Setter;
 
-    public void setTs(ITVset ts){
-        this.ts=ts;
-    }
+public class ChildPult implements Pult{
+    @Setter
+    private ITVset ts=null;
     
     public void switchChannelTo(int i){
         ts.switchChannel(this,i);

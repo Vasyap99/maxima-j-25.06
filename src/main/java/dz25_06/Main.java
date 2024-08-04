@@ -2,18 +2,16 @@ package dz25_06;
 
 import java.util.Scanner;
 import java.util.Random;
+import lombok.Getter;
 
 
 class tvFactory{
+    @Getter
     private ITVset ts;
     private boolean first_call=true;
 
     public tvFactory(ITVset ts){
         this.ts=ts;
-    }
-
-    public ITVset getTs(){
-        return ts;
     }
 
     public Pult getPult(int type){
