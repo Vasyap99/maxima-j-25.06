@@ -3,6 +3,9 @@ package dz25_06;
 import java.util.List;
 import java.util.Arrays;
 
+import lombok.ToString;
+
+@ToString(includeFieldNames = false)
 public class Channel1{
     private final List<Program> programs;
     public Channel1(String name,Program ... ps){
@@ -18,8 +21,4 @@ public class Channel1{
     }
 
     private final String name;
-
-    public String toString(){
-        return name;
-    }
 }
