@@ -4,8 +4,13 @@ import java.util.List;
 import java.util.Arrays;
 
 import lombok.ToString;
+import lombok.Builder;
+import lombok.AllArgsConstructor;
+
 
 @ToString(includeFieldNames = false)
+@Builder
+@AllArgsConstructor						//When you provide your own constructor then Lombok doesn't create a constructor with all args that @Builder is using. So you should just add annotation @AllArgsConstructor to your class
 public class Channel1{
     @ToString.Exclude
     private final List<Program> programs;
@@ -24,4 +29,6 @@ public class Channel1{
     }
 
     private final String name;
+
+    //public String toString(){return name;}
 }

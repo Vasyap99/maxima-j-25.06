@@ -1,0 +1,1 @@
+java -jar /home/fguper/__maxima/25.06dz/maxima-j-25.06/target/tvset-2.0-SNAPSHOT.jar

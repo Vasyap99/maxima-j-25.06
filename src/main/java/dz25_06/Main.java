@@ -2,6 +2,7 @@ package dz25_06;
 
 import java.util.Scanner;
 import java.util.Random;
+import java.util.List;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.NonNull;
@@ -46,10 +47,16 @@ class tvFactory{
 
 public class Main{
     public static void main(String[]s1){
+        List<Program> l = List.of( new Program("Vesti") );
+        Channel1 c3=Channel1.builder()
+			.programs(l)
+			.name("Russia24")
+
+			.build();
         tvFactory tf=new tvFactory( 
             new TVset(new Channel1("TNT",new Program("Dom 2"),new Program("Bitva Ekstrasensov")),
-                      new Channel1("1 kanal",new Program("Novosti"),new Program("KVN"),new Program("Show Malahova")),
-                      new Channel1("Russia24",new Program("Vesti"))
+                      new Channel1("1 kanal",new Program("Novosti"),new Program("KVN"),new Program("Show Malahova"))  ,
+                      c3 //new Channel1("Russia24",new Program("Vesti"))
                      )
         );
         int ptype=0;
